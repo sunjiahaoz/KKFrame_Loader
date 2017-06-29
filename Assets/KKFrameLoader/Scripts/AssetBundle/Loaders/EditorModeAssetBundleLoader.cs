@@ -34,7 +34,7 @@ namespace KK.Frame.Loader.ABS
                 }
             }
 
-            internal override Object[] LoadAllAssets()
+            internal override Object[] LoadAllAssets(Object user)
             {
                 string newPath = AssetBundlePathResolver.instance.GetEditorModePath(bundleName);
                 return AssetDatabase.LoadAllAssetsAtPath(newPath);
